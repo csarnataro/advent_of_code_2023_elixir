@@ -69,14 +69,5 @@ defmodule Day01Part2 do
     String.split(content, "\n")
     |> Enum.map(fn line -> extract_number(line) end)
     |> Enum.sum()
-
-    # |> Enum.map(&Integer.parse/1)
-    # |> Enum.map(&get_value/1)
-    # |> Enum.reduce(%{:max => 0, :bucket => 0}, &reducer(&1, &2))
-    # |> Map.fetch(:max)
-    # |> case do
-    #   {:ok, v} -> v
-    #   _ -> 0
-    # end
   end
 end
